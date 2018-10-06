@@ -26,9 +26,12 @@ def home():
 	g.db.close()
 	return render_template('index.html', posts=posts)
 
+
 @app.route('/welcome', methods=['GET'])
+@login_required
 def welcome():
 	return render_template('welcome.html')
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():

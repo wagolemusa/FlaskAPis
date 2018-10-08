@@ -13,7 +13,7 @@
 	<p class="error"><strong>Error</strong>{{ error }}</p>
 {% endif %}
 
-{% for messages in get_flashed_messages() %}
+{% for message in get_flashed_messages() %}
 	{{ message }}
 {% endfor %}
 

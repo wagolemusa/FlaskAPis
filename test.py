@@ -60,7 +60,7 @@ class FlaskTestCase(unittest.TestCase):
 				data=dict(username="admin", password="admin"),
 				follow_redirects=True
 		)
-		self.assertIn(b'He loves Hiphop', response.data)
+		self.assertIn(b'Im well', response.data)
 
 
 

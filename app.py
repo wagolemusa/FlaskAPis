@@ -1,6 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from flask_sqlalchemy import SQLAlchemy
-#from flask.ext.sqlalchemy import SQLAlchemy 
 from functools import wraps
 import sqlite3
 
@@ -57,6 +56,8 @@ def logout():
 	flash('You were just Logged out')
 	return redirect(url_for('welcome'))
 
+# def connect_db():
+# 	return sqlite3.connect(app.database)
 
 
 if __name__ == '__main__':

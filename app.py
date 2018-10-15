@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, request, session, flash
 from flask_sqlalchemy import SQLAlchemy
+# import psycopg2
 
 # from flask.ext.sqlalchemy import SQLAlchemy 
 from functools import wraps
